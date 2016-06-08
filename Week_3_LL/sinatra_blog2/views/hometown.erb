@@ -1,0 +1,19 @@
+<head>
+  <link rel="stylesheet" href="sinatra_blog_css.css"/>
+</head>
+
+<a href="/">About Me</a>
+<a href="/my_blog">My Blog</a>
+
+<h1>BROOKLYN</h1>
+
+<img src= "<%= @img %>">
+
+<div class = "container">
+  'I lived here until I was <%=@age_moved%>'
+  <%if @born == true%>
+    'I was born here.'
+  <%else%>
+    'I moved here in <%=@time_lived%>'
+  <%end%>
+</div>

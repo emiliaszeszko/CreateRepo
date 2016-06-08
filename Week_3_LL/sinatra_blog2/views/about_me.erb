@@ -1,0 +1,24 @@
+<head>
+  <link rel="stylesheet" href="sinatra_blog_css.css"/>
+</head>
+
+<div class="title">
+  <h1>Emilia Szeszko</h1>
+</div>
+
+<div class="navigation_links">
+  <h3><a href='/'>Home</a>
+      <a href='/hometown'>My Hometown</a>
+      <a href="/my_blog">My Blog</a></h3>
+</div>
+
+<div class="about_container">
+<div class="interests">
+  <p>
+  I like
+    <% @interests.each do |like| %>
+      <%= like %>
+    <%end%>
+  </p>
+</div>
+</div>
